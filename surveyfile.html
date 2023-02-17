@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      html {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: monospace;
+  background-color: lightblue;
+  padding: 5px;
+  text-align: center;
+}
+@media only screen and (max-width: 700px) {
+#title {
+  border-color: darkviolet;
+  border-width: 1px;
+  border-style: dashed;
+  position: center;
+
+}
+}
+h1 {
+  font-size: 55px;
+}
+p {
+  position: relative;
+  top: -15;
+  font-size: 10px;
+  padding: 5px;
+}
+input {
+  display: block; 
+  text-align: center;
+  margin: auto;
+  padding: 5px;
+}
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div id="headbox">
+      <h1 id="title">Who are you?</h1>
+      <p id="description">Let me get to know you!</p>
+      </div>
+    </div>
+    <div class="form">
+      <form id="survey-form">
+        <label id="name-label" for="name">Name</label>
+        <input required id="name" type="text" placeholder="Name"><br>
+        <label id="email-label" for="email">Email Address</label>
+        <input required id="email" type="email" placeholder="Enter your email address"><br>
+       <label id="number-label" for="number">Age</label>
+        <input required id="number" type="number" min="8" max="80" placeholder="18">
+        <label for="dropdown">Do you live in the United States?</label><br>
+        <select id="dropdown">
+          <option required value="yes">Yes</option>
+          <option required value="no">No</option> 
+        </select><br>
+        <label for="radio">Select your perferred pronouns</label>
+        <input name="radio" type="radio" value="she/her">She/Her</input>
+        <input name="radio" type="radio" value="they/them">They/Them</input>
+        <input name="radio" type="radio" value="he/him">He/Him</input>
+        <br>
+        <label for="pronoun-other">Other:</label>
+        <input type="text" id="pronoun-other" clas="pronoun-other"></input> 
+        <label for="checks">What's your favorite genre of meal?</label> <br>
+        <input id="checks" type="checkbox" value="breakfast">Breakfast</input>
+        <input id="checks" type="checkbox" value="lunch">Lunch</input>
+        <input id="checks" type="checkbox" value="dinner">Dinner</input> <br>
+        <label for="talk">Tell me about yourself!</label> <br>
+        <textarea id="talk" cols="45" rows="4" placeholder="Please type here"></textarea>
+        <input type="submit" id="submit" />
+
+     </form>
+    </div>
+  </body>
+</html>
