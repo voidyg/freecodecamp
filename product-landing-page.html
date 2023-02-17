@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Original Trombones</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Montserrat:wght@100&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"
+/>
+    <style>
+* not:(.card-title) {
+  background-color: #f7f2f1;
+}
+* {
+  !-- border: 1px solid black;-->
+  align-items: center; 
+  font-family: Montsterrat;
+}
+.logo {
+  background-color: orange;
+  width: 100%;
+  border: 0.5px solid black;
+  padding-top: 40px;
+}
+#nav-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 0px;
+  background-color: #f7f2f1;
+  z-index: 2;
+  border: 1px solid black;
+}
+nav  ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding-bottom: 10px;
+  left: 0;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+.hero {
+  text-align: center;
+  padding: 15px;
+}
+
+.features {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+}
+.icon {
+  color: orange;
+  margin-right: auto;
+  margin-left: auto;
+  width: 35%;
+}
+#how-it-works {
+  display: flex;
+  margin-top: 71px;
+  justify-content: center;
+  iframe {
+    max-width: 1000px;
+    width: 100%;
+  }
+}
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.card {
+  border: 0.5px solid black;
+  margin: 10px;
+  text-align: center;
+  width: 75%;
+}
+.card-title {
+  background-color: orange;
+  border-bottom: 0.5 dashed black;
+  margin: 0px;
+  padding: 5px;
+}
+button {
+  padding: 10px;
+  margin: 20px;
+}
+    </style>
+</head>
+
+<body>
+
+    <header id="header">
+      <nav id="nav-bar" class="nav-bar">
+        <ul>
+            <li><a class="nav-link" href="#features">Features</a></li>
+             <li><a class="nav-link" href="#how-it-works">How It Works</a></li>
+            <li><a class="nav-link" href="#pricing">Pricing</a></li>
+         </ul>
+    </nav> 
+    <img class="logo" id="header-img" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" alt="original trombones logo"> 
+    </header>
+
+    <section class="hero">
+        <h2>Handcrafted, home-made masterpieces</h2>
+        <form class="email" id="form"action="https://www.freecodecamp.com/email-submit">
+            <input name="email" id="email" type="email" placeholder="Enter your email" required >       
+            <input id="submit" type="submit"></input>
+        </form>
+        </section>
+
+        <section class="features" id="features">
+            <div class="icon">
+                <i class="fa fa-3x fa-fire"></i>
+            </div>
+            <div class="desc">
+                <h2>Premium Materials</h2>
+                <p>
+                   Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase. 
+                </p>
+              </div>
+              <div class="icon">
+                <i class="fa fa-3x fa-truck"></i>
+              </div>
+              <div class="desc">
+                <h2>Fast Shipping</h2>
+                <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+              </div>
+              <div class="icon">
+                <i class="fa fa-3x fa-battery-full"></i>
+              </div>
+              <div class="desc">
+                <h2>Quality Assurance</h2>
+                <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+              </div>
+            </div>
+        </section>
+
+        <section class="how-it-works" id="how-it-works">
+            <iframe id="video" width="560" height="315" src="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjhxa-p2pv9AhVok4kEHYESBfUQtwJ6BAgKEAI&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DG5LqrMcq1QE&usg=AOvVaw2z9tz9VRv88AqxjXARUSrG" frameborder="0" allowfullscreen></iframe>
+        </section>
+
+        <section class="cards" id="pricing">
+            <section class="card">
+                <div class="card-title"> 
+                    <h2>Tenor Trombone</h2>
+                </div>
+                <p>lorem ipsum</p>
+                <p>lorem ipsum</p>
+                <p>lorem ipsum</p>
+                <button>select</button>
+            </section>
+            <section class="card">
+                <div class="card-title">
+                    <h2>Base Trombone</h2>
+                </div>
+                <p>lorem ipsum</p>
+                <p>lorem ipsum</p>
+                <p>lorem ipsum</p>
+                <button>select</button>
+            </section>
+            <section class="card">
+                <div class="card-title">
+                    <h2>Valve Trombone</h2>
+                </div>
+                <p>lorem ipsum</p>
+                <p>lorem ipsum</p>
+                <p>lorem ipsum</p>
+                <button>select</button>
+            </section>
+
+        </section>
+        
+    </body>
+</html>
